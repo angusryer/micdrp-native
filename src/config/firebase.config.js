@@ -10,8 +10,8 @@ const firebaseConfig = {
     appId: "1:876062261559:web:62af6df8ae56068a341ab2"
   };
 
-if (!firebase.apps.length) {
-    firebase.initializeApp(firebaseConfig);
-}
+  firebase.initializeApp(firebaseConfig);
 
-export { firebase };
+  export default firebase;
+
+  // https://console.firebase.google.com/project/micdrp-0-1-0/database/firestore/data/users/raCSf218Z7y3EHAhh5LM
