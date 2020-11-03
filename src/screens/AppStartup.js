@@ -6,8 +6,14 @@ import { default as commonStyles } from '../commonStyles';
 const AppStartup = ({ navigation }) => {
 
     useEffect(() => {
+
         firebase.auth().onAuthStateChanged(user => {
             if (user) {
+                const userData = {
+                    uid: user.uid,
+                    name: user.displayName,
+                    avatar: user.photoURL,
+                }
                 navigation.navigate("Dashboard")
             } else {
                 navigation.navigate("Login")

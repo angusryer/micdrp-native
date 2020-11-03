@@ -27,7 +27,7 @@ const LoginScreen = ({ navigation }) => {
 
     return (
         <View style={commonStyles.container}>
-            <Text>Login asdasdScreen</Text>
+            <Text>Login Screen</Text>
             <Button title="Learn more" onPress={() => navigation.navigate('Learn')} />
             <Button title="Sign in" onPress={() => signIn()} />
         </View>
